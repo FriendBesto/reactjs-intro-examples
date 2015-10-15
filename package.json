@@ -11,9 +11,12 @@
     "url": "git+https://github.com/jlbooker/reactjs-intro-examples.git"
   },
   "author": "Jermey Booker",
-  "license": "GPLv2",
+  "license": "GPL-2.0",
   "bugs": {
     "url": "https://github.com/jlbooker/reactjs-intro-examples/issues"
   },
-  "homepage": "https://github.com/jlbooker/reactjs-intro-examples#readme"
+  "homepage": "https://github.com/jlbooker/reactjs-intro-examples#readme",
+  "devDependencies": {
+    "webpack": "^1.12.2"
+  }
 }
