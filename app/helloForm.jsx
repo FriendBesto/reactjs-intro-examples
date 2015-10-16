@@ -1,10 +1,13 @@
-var HelloMessage = React.createClass({
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+
+var HelloForm = React.createClass({
   getInitialState: function() {
     return {formName: ''}
   },
   handleChange: function() {
-    console.log(this.refs.nameField.getDOMNode().value);
-    this.setState({formName: this.refs.nameField.getDOMNode().value});
+    this.setState({formName: this.refs.nameField.value});
   },
   render: function() {
     if(this.state.formName == ''){
@@ -23,4 +26,4 @@ var HelloMessage = React.createClass({
   }
 });
 
-React.render(<HelloMessage name="Jeremy" />, mountNode);
+ReactDOM.render(<HelloForm name="Jeremy" />, document.getElementById('mountNode'));
